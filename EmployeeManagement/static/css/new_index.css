@@ -1,0 +1,54 @@
+body{
+    background-size:cover;
+    background-repeat:no-repeat;
+    margin:0;
+    padding:0;
+}
+.shine {
+  font-size:6em;
+  margin-left:280px;
+  margin-top:20px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.3);
+  background: #222 -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff)
+    ) 0 0 no-repeat;
+  background-image: -webkit-linear-gradient(
+    -40deg,
+    transparent 0%,
+    transparent 40%,
+    #fff 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-background-size: 50px;
+  -webkit-animation: zezzz;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes zezzz {
+  0%,
+  10% {
+    background-position: -200px;
+  }
+  20% {
+    background-position: top left;
+  }
+  100% {
+    background-position: 570px;
+  }
+}
+.desc{
+    width:500px;
+    height:150px;
+    margin-left:380px;
+    margin-top:30px;
+    display:block;
+    text-align:center;
+}

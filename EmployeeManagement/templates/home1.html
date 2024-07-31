@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HR-HORIZON</title>
+    <link rel="stylesheet" href="{% static 'css/home2.css' %}">
+    <script src="https://kit.fontawesome.com/ffe6ffcd92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="{% static 'img/2.jpg' %}" alt="" class="bg">
+    <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">HR HORIZON</a></div>
+      <ul class="menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+ <div class="card">
+     <div class="card-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse expedita magnam maiores quam sunt tempora ut. Asperiores beatae dolorum eveniet facere non quam recusandae repellendus tempore totam, vitae, voluptates.
+        e expedita magnam maiores quam sunt tempora ut. Asperiores beatae dolorum eveniet facere non quam recusandae repellendus tempore totam, vitae, voluptates.</p>
+        <div class="buttons">
+            <a href="add_employee"><button>
+            <span style="color:black;">
+            <svg style="color:black;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> Staff
+            </span>
+            </button></a>
+            <a href="view_employee">
+         <button>
+            <span style="color:black;">
+                <i class="fa-regular fa-eye" style="margin-right:10px;color:black"></i>View
+            </span>
+            </button>
+            </a>
+        </div>
+
+ </div>
+ </div>
+</body>
+</html>

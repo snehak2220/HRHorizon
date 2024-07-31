@@ -1,0 +1,50 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="{% static 'css/signinup.css' %}">
+</head>
+<body>
+<div class="container">
+    <img src="{% static 'img/bg_banner1.jpg' %}" alt="" class="bg">
+    <div class="login-box">
+  <p>Register</p>
+  <form action="#" method="post">
+      {% csrf_token %}
+    <div class="user-box">
+      <input required="" name="username" type="text">
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input required="" name="password" type="password">
+      <label>Password</label>
+    </div>
+      <div class="user-box">
+      <input required="" name="cpassword" type="password">
+      <label>Password</label>
+    </div>
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <button type="submit">REGISTER</button>
+    </a>
+      {% if messages %}
+        {% for message in messages %}
+            <div>
+                <p style="color:red;front-size:10px;">{{ message }}</p>
+            </div>
+        {% endfor %}
+      {% endif %}
+  </form>
+  <p>Already have an account? <a href="signin" class="a2">Sign In!</a></p>
+</div>
+</div>
+</body>
+</html>
